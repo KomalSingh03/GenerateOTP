@@ -35,7 +35,7 @@ const Email = mongoose.model('Email', emailSchema);
 mongoose.connect(process.env.MONGODB_URI)
 
 
-
+// Nodemailer transporter setup
 const transporter = nodemailer.createTransport({  //Nodemailer transporter for sending emails via Gmail's SMTP server.
     host: 'smtp.gmail.com',
     port: 465,
